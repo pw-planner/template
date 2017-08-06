@@ -1,0 +1,26 @@
+# Freeplane map "My Project"
+
+task phase_1 "Phase 1" {
+    start 2017-06-01
+
+    task phase_1_features "Features (Phase 1)" {
+
+        task task_1 "Task #1" {
+            allocate developer_1
+            effort 4h
+        }
+    }
+}
+
+task phase_2 "Phase 2" {
+    start 2017-09-01
+
+    task phase_2_features "Features (Phase 2)" {
+
+        task task_2 "Task #2" {
+            allocate developer_1
+            effort 1d
+            depends phase_1
+        }
+    }
+}

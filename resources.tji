@@ -1,0 +1,5 @@
+# Freeplane map "My Project"
+
+resource developer_1 "Developer 1" {
+    limits { dailymax 3h weeklymax 12h }
+}
